@@ -2,8 +2,9 @@ import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:weldwahidapp/dashboard.dart';
-import 'package:weldwahidapp/routes/routeConstant.dart';
-import 'package:weldwahidapp/routes/routes.dart';
+import 'package:go_router/go_router.dart';
+import 'package:weldwahidapp/weldwahid.dart';
+
 
 void main() {
   runApp(
@@ -11,6 +12,24 @@ void main() {
           home: SplashScreen(),
         ),
   );
+  final GoRouter _router = GoRouter(
+  routes: <RouteBase>[
+    GoRoute(
+      path: '/',
+      builder: (BuildContext context, GoRouterState state) {
+        return  Dashboard();
+      },
+      routes: <RouteBase>[
+        GoRoute(
+          path: 'weldwahid',
+          builder: (BuildContext context, GoRouterState state) {
+            return  WeldWahid();
+          },
+        ),
+      ],
+    ),
+  ],
+);
     
 }
 
@@ -30,8 +49,8 @@ class SplashScreen extends StatelessWidget {
       backgroundColor: HexColor("#1d4518"),
       nextScreen:  Dashboard(),
       splashIconSize: 300,
-    duration: 4000,
-    splashTransition: SplashTransition.slideTransition,
+       duration: 4000,
+       splashTransition: SplashTransition.slideTransition,
     
     );
   }

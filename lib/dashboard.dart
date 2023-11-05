@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:weldwahidapp/agelglotoch.dart';
 import 'package:weldwahidapp/deber.dart';
+import 'package:weldwahidapp/mezmurat.dart';
+import 'package:weldwahidapp/routes/routeConstant.dart';
+import 'package:weldwahidapp/weldwahid.dart';
+import 'package:weldwahidapp/wereboch.dart';
 import 'NavBar.dart';
 
 class Dashboard extends StatelessWidget {
@@ -21,21 +26,18 @@ class Dashboard extends StatelessWidget {
       "ሰ/ት/ቤቱ ",
       "መዝሙራት",
       "ወረቦች",
-      "yeneseha mezmur",
+      "አገልግሎቶች",
       "አድራሻዎቻችን",
      
 
      ];
      List pages=[
-    
       Deber(),
+      WeldWahid(),
+      Mezmurat(),
+      Werboch(),
+      Agelglotoch(),
       NavBar(),
-      NavBar(),
-      NavBar(),
-      NavBar(),
-      NavBar(),
-      
-      
      ];
 
 
@@ -156,7 +158,11 @@ class Dashboard extends StatelessWidget {
                  ),
                  child: InkWell(
                    onTap: () {
-                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (BuildContext context)=>pages[index]));
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) =>
+                        pages[index]
+                         ));
   
                    },
                    child: Container(

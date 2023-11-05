@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:weldwahidapp/agelglotoch.dart';
 import 'package:weldwahidapp/dashboard.dart';
 import 'package:weldwahidapp/deber.dart';
-import 'package:weldwahidapp/routes/routeConstant.dart';
+import 'package:weldwahidapp/mezmurat.dart';
+
 import 'package:weldwahidapp/weldwahid.dart';
+import 'package:weldwahidapp/wereboch.dart';
 
 class NavBar extends StatelessWidget {
   @override
@@ -79,15 +82,22 @@ class NavBar extends StatelessWidget {
               fontWeight: FontWeight.bold,
                 fontSize: 13,
             ),),
-            onTap: () => null,
+          onTap: (){
+             Navigator.pop(context);
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Mezmurat()));
+          },
           ),
-          const ListTile(
-            leading: Icon(Icons.audio_file),
-            title: Text('ወረቦች',style: TextStyle(
+           ListTile(
+            leading: const Icon(Icons.audio_file),
+            title: const Text('ወረቦች',style: TextStyle(
               fontWeight: FontWeight.bold,
                 fontSize: 13,
             ),
             ),
+            onTap: (){
+               Navigator.pop(context);
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Werboch()));
+            },
           ),
           Divider(),
          ListTile(
@@ -98,7 +108,10 @@ class NavBar extends StatelessWidget {
                 fontSize: 13,
             ),
             ),
-            onTap: () => null,
+            onTap: () {
+              Navigator.pop(context);
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Agelglotoch()));
+            },
           ),
           ListTile(
             leading: Icon(Icons.location_city),

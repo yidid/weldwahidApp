@@ -130,18 +130,20 @@ class WeldWahid extends StatelessWidget {
             
             scrollDirection: Axis.vertical, 
                 child:  Padding(
-                  padding:  EdgeInsets.only(
+                  padding:const EdgeInsets.only(
                     top:20, left:25, right:25),
                    
                   child: 
-                   Column(
-                    children: [
-                            Image.asset('assets/logo.png',width: 100,height: 100,),
+                   Padding(
+                     padding: const EdgeInsets.all(8.0),
+                     child: Column(
+                      children: [
+                              Image.asset('assets/logo.png',width: 100,height: 100,),
+                          
+                        const Text(
                         
-                      Text(
-                      
-                       
-                        'በጋ ተከታታይ ትምህርት መማር ይፈልጋሉ ሰንበት ትምህርት ቤታችን በበጋ ወራት በሚሰጠው የተከታታይ ትምህርት መማር ከፈለጉ ምዝገባ ስለተጀመረ አሁኑኑ ይመዝገቡ፡፡'
+                         
+                          'በጋ ተከታታይ ትምህርት መማር ይፈልጋሉ ሰንበት ትምህርት ቤታችን በበጋ ወራት በሚሰጠው የተከታታይ ትምህርት መማር ከፈለጉ ምዝገባ ስለተጀመረ አሁኑኑ ይመዝገቡ፡፡'
               
               'የምዝገባ ቦታ በሰንበት ትምህርት ቤቱ መዝሙር ቤትና ቤተ-መፃህፍት በተጨማሪም በቴሌግራም @Kirube11'
               'ስም ፣ሰልክ እና ክፍላችሁን በመላክ መመዝገብ ትችላላችሁ'
@@ -168,9 +170,10 @@ class WeldWahid extends StatelessWidget {
                 fontSize: 14,
                 
               ),
-                      ),
-                    ],
-                  )
+                        ),
+                      ],
+                  ),
+                   )
               
               
                   ),
