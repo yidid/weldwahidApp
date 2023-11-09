@@ -116,9 +116,25 @@ class Yemesgana extends StatelessWidget {
               ),
               height: heights*0.75,
               width: widths,
+                child:  DecoratedBox(
+                decoration: BoxDecoration(
+            image: DecorationImage(
+              
+            
+              
+                image: const AssetImage("assets/k.jpg",
+                ),
+                 colorFilter: ColorFilter.mode(Colors.white.withOpacity(0.3), BlendMode.modulate,)
+                , 
+                fit: BoxFit.cover,
+                
+                ),
+          ),
+   
+              
               child: Padding(
                 padding: const EdgeInsets.only(
-                  top: 25,left: 25,right: 25,
+                  top: 10,left: 25,right: 25,
                 ),
                 child: ListView(
                   children: [
@@ -128,7 +144,7 @@ class Yemesgana extends StatelessWidget {
                       (
                        width: 10,
                        height: 40,
-                       color: Color.fromARGB(135, 225, 223, 223),
+                        color: Colors.white,
                        
                         child:  Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -159,7 +175,7 @@ class Yemesgana extends StatelessWidget {
                       (
                        width: 10,
                        height: 40,
-                       color: Color.fromARGB(135, 225, 223, 223),
+                        color: Colors.white,
                        
                         child:  Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -188,7 +204,7 @@ class Yemesgana extends StatelessWidget {
                       (
                        width: 10,
                        height: 40,
-                       color: Color.fromARGB(135, 225, 223, 223),
+                        color: Colors.white,
                        
                         child:  Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -217,7 +233,7 @@ class Yemesgana extends StatelessWidget {
                       (
                        width: 10,
                        height: 40,
-                       color: Color.fromARGB(135, 225, 223, 223),
+                        color: Colors.white,
                        
                         child:  Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -246,7 +262,7 @@ class Yemesgana extends StatelessWidget {
                       (
                        width: 10,
                        height: 40,
-                       color: Color.fromARGB(135, 225, 223, 223),
+                        color: Colors.white,
                        
                         child:  Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -275,7 +291,7 @@ class Yemesgana extends StatelessWidget {
                       (
                        width: 10,
                        height: 40,
-                       color: Color.fromARGB(135, 225, 223, 223),
+                        color: Colors.white,
                        
                         child:  Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -304,7 +320,7 @@ class Yemesgana extends StatelessWidget {
                       (
                        width: 10,
                        height: 40,
-                       color: Color.fromARGB(135, 225, 223, 223),
+                        color: Colors.white,
                        
                         child:  Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -333,7 +349,7 @@ class Yemesgana extends StatelessWidget {
                       (
                        width: 10,
                        height: 40,
-                       color: Color.fromARGB(135, 225, 223, 223),
+                        color: Colors.white,
                        
                         child:  Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -362,7 +378,7 @@ class Yemesgana extends StatelessWidget {
                       (
                        width: 10,
                        height: 40,
-                       color: Color.fromARGB(135, 225, 223, 223),
+                        color: Colors.white,
                        
                         child:  Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -390,7 +406,7 @@ class Yemesgana extends StatelessWidget {
                   ],
                 ),
               ),
-              )
+                 ) )
            ])
             )
             );
