@@ -5,84 +5,76 @@ import 'package:weldwahidapp/NavBar.dart';
 
 class Werboch extends StatelessWidget {
    Werboch({super.key});
-   var heights,widths;
+   var height,width;
 
 
 
   @override
   Widget build(BuildContext context) {
-     heights= MediaQuery.of(context).size.height;
-    widths= MediaQuery.of(context).size.width;
-    return Scaffold(
-  
+     height= MediaQuery.of(context).size.height;
+    width= MediaQuery.of(context).size.width;
+      return Scaffold(
+      appBar: AppBar(
+      
+       actions: [
+    Container(
+      width: 40,
+      child: Image.asset(
+        "assets/logo.png",
+      ),
+    ),
+    ],
+    backgroundColor: HexColor("#1d4516"),
+      shadowColor: Colors.transparent,
+      
+    ),
+     
       drawer: NavBar(),
       body: Container(
-        color: HexColor("#1d4518"),
-        height: heights,
-        width: widths,
+
+        color:  HexColor("#1d4516"),
+        height: height,
+        width: width,
         child: Column(
           children: [
             Container(
               decoration: BoxDecoration(
-               color: HexColor("#1d4518"),
+               color:  HexColor("#1d4516"),
               ),
-              height: heights*0.20,
-              width: widths,
+              height: height*0.13,
+              width: width,
               child: Column(
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(
-                      top: 20,
+                      top: 1,
                       left:15,
                       right: 15,
 
                     ),
                     child: Row
-                    (mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    (mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                      InkWell(
-                        onTap: () {
-                       Navigator.of(context).push(
-                        MaterialPageRoute(
-                        builder: (context) => NavBar(
-                        
-                        ),));
-
-                        },
-                        child:const Icon(
-                          Icons.sort,
-                          color: Colors.white,
-                          size:40,
-                        ),
-                      ),
-                      Container(
-                         height: 50,width: 50,
-                        decoration:  const BoxDecoration(
-                          image:DecorationImage(image: AssetImage( "assets/logo.png"))
-                        ),
-
-                       
-                      )
-                    ],),
-                  ),
-                  
-                    Padding(
+                    
+                       Padding(
                     padding:const EdgeInsets.only(
                       top: 5,
                       left:15,
                       right: 15,
                     ),
-                    child:  Column(
+                    child: 
+                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children:const [
                         Text(
-                          "ወረቦች",
+                          "ስለ መካነ ቅዱሳን ",
                           style: TextStyle(
                             fontSize: 20,
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             
-                         ),
+                           
+                          ),
                         ),
                         Text(
                           "በስራ ላይ....",
@@ -94,16 +86,18 @@ class Werboch extends StatelessWidget {
                            
                           ),
                         )
-                       
                       ],
 
                     )
-                    
                     ,),
 
 
+                     
+                    ],),
+                  ),
+                  
+                 
                 ]),
-                
             ),
               Container(
               decoration: const BoxDecoration(
@@ -113,8 +107,8 @@ class Werboch extends StatelessWidget {
                   topRight: Radius.circular(30)
                 )
               ),
-              height: heights*0.75,
-              width: widths,
+              height: height*0.78,
+              width: width,
                 child:  DecoratedBox(
                 decoration: BoxDecoration(
             image: DecorationImage(

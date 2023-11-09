@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:weldwahidapp/addreses.dart';
 import 'package:weldwahidapp/agelglotoch.dart';
 import 'package:weldwahidapp/dashboard.dart';
 import 'package:weldwahidapp/deber.dart';
@@ -121,7 +122,10 @@ class NavBar extends StatelessWidget {
                 fontSize: 13,
             ),
             ),
-            onTap: () => null,
+            onTap: (){
+              Navigator.pop(context);
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => Address()));
+            },
           ),
           Divider(),
           ListTile(

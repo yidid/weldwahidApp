@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:weldwahidapp/addreses.dart';
 import 'package:weldwahidapp/agelglotoch.dart';
 import 'package:weldwahidapp/deber.dart';
 import 'package:weldwahidapp/mezmurat.dart';
@@ -13,12 +14,15 @@ class Dashboard extends StatelessWidget {
      var height, width;
 
      List Imgdata=[
-     "assets/bete.png",
+     "assets/k.jpg",
       "assets/logo.png",
       "assets/keb.png",
       "assets/StYared.jpg",
-      "assets/keb.png",
+     "assets/agel.jpg",
       "assets/location.png",
+      "assets/agel.jpg",
+      "assets/location.png",
+       
     
      ];
      List titles=[
@@ -28,6 +32,9 @@ class Dashboard extends StatelessWidget {
       "ወረቦች",
       "አገልግሎቶች",
       "አድራሻዎቻችን",
+       "አገልግሎቶች",
+      "አድራሻዎቻችን",
+      
      
 
      ];
@@ -37,7 +44,7 @@ class Dashboard extends StatelessWidget {
       Mezmurat(),
       Werboch(),
       Agelglotoch(),
-      NavBar(),
+      Address(),
      ];
 
 
@@ -46,60 +53,58 @@ class Dashboard extends StatelessWidget {
     height= MediaQuery.of(context).size.height;
     width= MediaQuery.of(context).size.width;
     return Scaffold(
+      
+    
+      appBar: AppBar(
+       actions: [
+    Container(
+      width: 40,
+      child: Image.asset(
+        "assets/logo.png",
+      ),
+    ),
+    
+  ],
+      backgroundColor: HexColor("#1d4516"),
+      shadowColor: Colors.transparent,
+      
+    
+    
+      ),
       drawer: NavBar(),
       body: Container(
-        color: HexColor("#1d4518"),
+        color:  HexColor("#1d4516"),
         height: height,
         width: width,
         child: Column(
           children: [
             Container(
               decoration: BoxDecoration(
-               color: HexColor("#1d4518"),
+               color:  HexColor("#1d4516"),
               ),
-              height: height*0.25,
+              height: height*0.13,
               width: width,
               child: Column(
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(
-                      top: 30,
+                      top: 1,
                       left:15,
                       right: 15,
 
                     ),
                     child: Row
-                    (mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    (mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                      InkWell(
-                        onTap: () {
-                       Navigator.of(context).push(MaterialPageRoute(builder: (context) => NavBar()));
-
-                        },
-                        child:const Icon(
-                          Icons.sort,
-                          color: Colors.white,
-                          size:40,
-                        ),
-                      ),
-                      Container(
-                         height: 50,width: 50,
-                        decoration:  const BoxDecoration(
-                          image:DecorationImage(image: AssetImage( "assets/logo.png"))
-                        ),
-
-                       
-                      )
-                    ],),
-                  ),
-                  
-                    Padding(
+                    
+                       Padding(
                     padding:const EdgeInsets.only(
-                      top: 20,
+                      top: 5,
                       left:15,
                       right: 15,
                     ),
-                    child:  Column(
+                    child: 
+                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children:const [
                         Text(
@@ -128,6 +133,11 @@ class Dashboard extends StatelessWidget {
                     ,),
 
 
+                     
+                    ],),
+                  ),
+                  
+                 
                 ]),
             ),
             Container(
@@ -138,18 +148,18 @@ class Dashboard extends StatelessWidget {
                   topRight: Radius.circular(30)
                 )
               ),
-              height: height*0.75,
+              height: height*0.78,
               width: width,
               child:
                GridView.builder(
                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                    crossAxisCount:2,
-                   childAspectRatio: 1.1,
+                   childAspectRatio: 1.15,
                    mainAxisSpacing: 5 
                    ),
               
               shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
+           
               itemCount: Imgdata.length,
               itemBuilder: (context,index){
                return Padding(
@@ -185,11 +195,11 @@ class Dashboard extends StatelessWidget {
                      children: [
                        Image.asset(Imgdata[index],
                        width: 80,
-                       height: 70,
+                       height: 60,
                        ),
                        Text(titles[index],
                         style:const TextStyle(
-                            fontSize: 10,
+                            fontSize: 13,
                   
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
