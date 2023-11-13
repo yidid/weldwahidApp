@@ -1,14 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
-
 import 'NavBar.dart';
 
-class MezmurList extends StatelessWidget {
-   MezmurList ({super.key});
-     var height, width;
 
-     
+
+
+class MezmurList extends StatefulWidget {
+   MezmurList ({super.key});
+
+
+  @override
+  State<MezmurList> createState() => _MezmurListState();
+}
+
+class _MezmurListState extends State<MezmurList> {
+ 
+     var height, width;
+   
+
 
 
   @override

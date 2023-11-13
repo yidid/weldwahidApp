@@ -2,12 +2,19 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:weldwahidapp/NavBar.dart';
+import 'package:weldwahidapp/db/database_provider.dart';
 
-class Yemesgana extends StatelessWidget {
+class Yemesgana extends StatefulWidget {
    Yemesgana({super.key});
+
+  @override
+  State<Yemesgana> createState() => _YemesganaState();
+}
+
+class _YemesganaState extends State<Yemesgana> {
    var height,width;
-
-
+   
+    
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +37,8 @@ class Yemesgana extends StatelessWidget {
     ),
      
       drawer: NavBar(),
-      body: Container(
+      body: 
+      Container(
 
         color:  HexColor("#1d4516"),
         height: height,

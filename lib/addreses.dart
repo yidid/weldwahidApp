@@ -69,7 +69,7 @@ class Address extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children:const [
                         Text(
-                          "ስለ መካነ ቅዱሳን ",
+                          "አድራሻዎቻችን ",
                           style: TextStyle(
                             fontSize: 20,
                             color: Colors.white,

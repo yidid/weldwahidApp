@@ -1,4 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:weldwahidapp/dashboard.dart';
@@ -7,7 +9,8 @@ import 'package:weldwahidapp/weldwahid.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 
-void main() {
+void main()  {
+ 
     MaterialColor mycolor = MaterialColor(Color.fromRGBO(29, 69, 2, 1).value,
      <int, Color>{
        50: Color.fromRGBO(29, 69, 24, 0.1),

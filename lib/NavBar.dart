@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:weldwahidapp/addreses.dart';
+
 import 'package:weldwahidapp/agelglotoch.dart';
 import 'package:weldwahidapp/dashboard.dart';
 import 'package:weldwahidapp/deber.dart';
@@ -131,7 +132,10 @@ class NavBar extends StatelessWidget {
           ListTile(
             title: Text('Exit'),
             leading: Icon(Icons.exit_to_app),
-            onTap: () => Navigator.pop(context),
+            onTap: () {
+               Navigator.pop(context);
+              
+            },
           ),
         ],
       ),
