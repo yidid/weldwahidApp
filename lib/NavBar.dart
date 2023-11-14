@@ -6,6 +6,7 @@ import 'package:weldwahidapp/agelglotoch.dart';
 import 'package:weldwahidapp/dashboard.dart';
 import 'package:weldwahidapp/deber.dart';
 import 'package:weldwahidapp/mezmurat.dart';
+import 'package:weldwahidapp/test.dart';
 
 import 'package:weldwahidapp/weldwahid.dart';
 import 'package:weldwahidapp/wereboch.dart';
@@ -134,8 +135,10 @@ class NavBar extends StatelessWidget {
             leading: Icon(Icons.exit_to_app),
             onTap: () {
                Navigator.pop(context);
-              
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => FirebaseListPage()));
             },
+              
+            
           ),
         ],
       ),

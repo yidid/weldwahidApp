@@ -2,6 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:weldwahidapp/NavBar.dart';
+import 'package:weldwahidapp/YeabalatMezmur.dart';
+import 'package:weldwahidapp/Yehitsanat.dart';
+import 'package:weldwahidapp/YemesganaList.dart';
+import 'package:weldwahidapp/Yeneseha.dart';
+import 'package:weldwahidapp/Yeserg.dart';
 import 'package:weldwahidapp/deber.dart';
 import 'package:weldwahidapp/weldwahid.dart';
 import 'package:weldwahidapp/yemesgana.dart';
@@ -32,12 +37,13 @@ class Mezmurat extends StatelessWidget {
      ];
      List pages=[
     
-      Yemesgana(),
-      Yemesgana(),
-      Yemesgana(),
-      Yemesgana(),
-      Yemesgana(),
-      Yemesgana(),
+      YemesganaList(),
+      Yeabalat(),
+      Yeneseha(),
+      Yeabalat(),
+      Yeserg(),
+      Yehitsanat(),
+     
     
       
 
@@ -145,13 +151,13 @@ class Mezmurat extends StatelessWidget {
                   topRight: Radius.circular(30)
                 )
               ),
-              height: height*0.78,
+              height: height*0.745,
               width: width,
               child:
                GridView.builder(
                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                    crossAxisCount:2,
-                   childAspectRatio: 1.1,
+                   childAspectRatio: 1,
                    mainAxisSpacing: 5 
                    ),
               
@@ -161,7 +167,10 @@ class Mezmurat extends StatelessWidget {
               itemBuilder: (context,index){
                return Padding(
                  padding: const EdgeInsets.only(
-                  top: 15
+                  top: 30,
+                  left: 5,
+                 right: 5,
+
                  ),
                  child: InkWell(
                    onTap: () {
@@ -169,7 +178,7 @@ class Mezmurat extends StatelessWidget {
   
                    },
                    child: Container(
-                     margin:const EdgeInsets.symmetric(vertical:8, horizontal:20,
+                     margin:const EdgeInsets.symmetric(vertical:1, horizontal:10,
 
                    ),
                    decoration: BoxDecoration(

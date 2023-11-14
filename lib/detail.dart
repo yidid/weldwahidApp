@@ -1,23 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-
-
 import 'NavBar.dart';
 
-class Deber extends StatelessWidget {
-   Deber({super.key});
-     var height, width;
 
-    
+class DetailPage extends StatelessWidget {
+  final Map<String, dynamic> data;
+  
+  
+   
+   var height, width;
+
+  DetailPage({required this.data});
+  
+
+  
 
   @override
   Widget build(BuildContext context) {
-    height= MediaQuery.of(context).size.height;
+    
+   height= MediaQuery.of(context).size.height;
     width= MediaQuery.of(context).size.width;
-       return Scaffold(
+      return Scaffold(
       appBar: AppBar(
-      
-       actions: [
+        actions: [
     Container(
       width: 40,
       child: Image.asset(
@@ -25,13 +30,12 @@ class Deber extends StatelessWidget {
       ),
     ),
     ],
-    backgroundColor: HexColor("#1d4516"),
+     backgroundColor: HexColor("#1d4516"),
       shadowColor: Colors.transparent,
       
     ),
-     
-      drawer: NavBar(),
-      body: Container(
+      
+          body: Container(
 
         color:  HexColor("#1d4516"),
         height: height,
@@ -66,9 +70,9 @@ class Deber extends StatelessWidget {
                     child: 
                      Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children:const [
-                        Text(
-                          "ስለ መካነ ቅዱሳን ",
+                      children: [
+                         Text(
+                          "${data['name']} ",
                           style: TextStyle(
                             fontSize: 20,
                             color: Colors.white,
@@ -111,7 +115,7 @@ class Deber extends StatelessWidget {
               ),
               height: height*0.745,
               width: width,
-              child:  DecoratedBox(
+               child:  DecoratedBox(
                 decoration: BoxDecoration(
             image: DecorationImage(
               
@@ -125,43 +129,27 @@ class Deber extends StatelessWidget {
                 
                 ),
           ),
-           child: SingleChildScrollView( 
+   
+              
+                child: SingleChildScrollView( 
               
             
             scrollDirection: Axis.vertical, 
                 child:  Padding(
-                  padding:  const EdgeInsets.only(
+                  padding:const EdgeInsets.only(
                     top:20, left:25, right:25),
                    
                   child: 
                    Padding(
-                     padding: const EdgeInsets.all(8.0),
+                     padding: const EdgeInsets.all(40.0),
                      child: Column(
                       children: [
-                         Image.asset('assets/bete.png',width: 200,height: 120,),
-                        const Text(
+                             
+                     
+                         Text('${data['Poem'].toString().replaceAll('\\n', '\n')}',
                         
-                         
-                          'በጋ ተከታታይ ትምህርት መማር ይፈልጋሉ ሰንበት ትምህርት ቤታችን በበጋ ወራት በሚሰጠው የተከታታይ ትምህርት መማር ከፈለጉ ምዝገባ ስለተጀመረ አሁኑኑ ይመዝገቡ፡፡'
-              
-              'የምዝገባ ቦታ በሰንበት ትምህርት ቤቱ መዝሙር ቤትና ቤተ-መፃህፍት በተጨማሪም በቴሌግራም @Kirube11'
-              'ስም ፣ሰልክ እና ክፍላችሁን በመላክ መመዝገብ ትችላላችሁ'
-               'በጋ ተከታታይ ትምህርት መማር ይፈልጋሉ'
-              'ሰንበት ትምህርት ቤታችን በበጋ ወራት በሚሰጠው የተከታታይ ትምህርት መማር ከፈለጉ ምዝገባ ስለተጀመረ አሁኑኑ ይመዝገቡ፡፡'
-              
-              'የምዝገባ ቦታ በሰንበት ትምህርት ቤቱ መዝሙር ቤትና ቤተ-መፃህፍት በተጨማሪም በቴሌግራም @Kirube11'
-              'ስም ፣ሰልክ እና ክፍላችሁን በመላክ መመዝገብ ትችላላችሁ'
-               'በጋ ተከታታይ ትምህርት መማር ይፈልጋሉ'
-              'ሰንበት ትምህርት ቤታችን በበጋ ወራት በሚሰጠው የተከታታይ ትምህርት መማር ከፈለጉ ምዝገባ ስለተጀመረ አሁኑኑ ይመዝገቡ፡፡'
-              
-              'የምዝገባ ቦታ በሰንበት ትምህርት ቤቱ መዝሙር ቤትና ቤተ-መፃህፍት በተጨማሪም በቴሌግራም @Kirube11'
-              'ስም ፣ሰልክ እና ክፍላችሁን በመላክ መመዝገብ ትችላላችሁ'
-               'በጋ ተከታታይ ትምህርት መማር ይፈልጋሉ'
-              'ሰንበት ትምህርት ቤታችን በበጋ ወራት በሚሰጠው የተከታታይ ትምህርት መማር ከፈለጉ ምዝገባ ስለተጀመረ አሁኑኑ ይመዝገቡ፡፡'
-              
-              'የምዝገባ ቦታ በሰንበት ትምህርት ቤቱ መዝሙር ቤትና ቤተ-መፃህፍት በተጨማሪም በቴሌግራም @Kirube11'
-              'ስም ፣ሰልክ እና ክፍላችሁን በመላክ መመዝገብ ትችላላችሁ',
-              textAlign: TextAlign.justify,
+              textAlign: TextAlign.center,
+              softWrap: true,
               style: TextStyle(
                 fontWeight: FontWeight.w500,
                 color: Colors.black,
@@ -177,14 +165,12 @@ class Deber extends StatelessWidget {
               
                   ),
                 )
-                ),
-              ),
-             
+               )
             
-          
+            )
     ]),
       )
       
     );
-  } 
+  }
 }

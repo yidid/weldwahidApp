@@ -20,8 +20,7 @@ class Dashboard extends StatelessWidget {
       "assets/StYared.jpg",
      "assets/agel.jpg",
       "assets/location.png",
-      "assets/agel.jpg",
-      "assets/location.png",
+      
        
     
      ];
@@ -32,8 +31,7 @@ class Dashboard extends StatelessWidget {
       "ወረቦች",
       "አገልግሎቶች",
       "አድራሻዎቻችን",
-       "አገልግሎቶች",
-      "አድራሻዎቻችን",
+      
       
      
 
@@ -148,23 +146,27 @@ class Dashboard extends StatelessWidget {
                   topRight: Radius.circular(30)
                 )
               ),
-              height: height*0.78,
+              height: height*0.745,
               width: width,
               child:
                GridView.builder(
                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                    crossAxisCount:2,
-                   childAspectRatio: 1.15,
+                   childAspectRatio: 1.03,
                    mainAxisSpacing: 5 
                    ),
               
-              shrinkWrap: true,
+            shrinkWrap: true,
+             physics: const NeverScrollableScrollPhysics(),
            
               itemCount: Imgdata.length,
               itemBuilder: (context,index){
                return Padding(
                  padding: const EdgeInsets.only(
-                  top: 15
+                  top: 30,
+                  right: 5,
+                  left: 5,
+
                  ),
                  child: InkWell(
                    onTap: () {
@@ -176,7 +178,8 @@ class Dashboard extends StatelessWidget {
   
                    },
                    child: Container(
-                     margin:const EdgeInsets.symmetric(vertical:8, horizontal:20,
+                    
+                     margin:const EdgeInsets.symmetric(vertical:1, horizontal:10,
 
                    ),
                    decoration: BoxDecoration(
@@ -195,7 +198,7 @@ class Dashboard extends StatelessWidget {
                      children: [
                        Image.asset(Imgdata[index],
                        width: 80,
-                       height: 60,
+                       height: 70,
                        ),
                        Text(titles[index],
                         style:const TextStyle(

@@ -106,7 +106,7 @@ class Agelglotoch extends StatelessWidget {
                   topRight: Radius.circular(30)
                 )
               ),
-              height: height*0.78,
+              height: height*0.745,
               width: width,
               child:  DecoratedBox(
                 decoration: BoxDecoration(
