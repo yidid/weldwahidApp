@@ -7,14 +7,14 @@ import 'package:weldwahidapp/detail.dart';
 
 
 
-class Yemesgana extends StatefulWidget {
-   Yemesgana({super.key});
+class YemebetachenRejim extends StatefulWidget {
+   YemebetachenRejim({super.key});
 
   @override
-  State<Yemesgana> createState() => _YemesganaState();
+  State<YemebetachenRejim> createState() => _YemebetachenRejimState();
 }
 
-class _YemesganaState extends State<Yemesgana> {
+class _YemebetachenRejimState extends State<YemebetachenRejim> {
    var height,width;
    final controller = TextEditingController();
    
@@ -43,7 +43,7 @@ class _YemesganaState extends State<Yemesgana> {
       drawer: NavBar(),
       body: 
       StreamBuilder<QuerySnapshot>(
-        stream: FirebaseFirestore.instance.collection('YeGetachenRejimYemesganaMezmur').snapshots(),
+        stream: FirebaseFirestore.instance.collection("YemebetachenRejimMezmurat").snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
           if (snapshot.hasError) {
             return Text('Error: ${snapshot.error}');

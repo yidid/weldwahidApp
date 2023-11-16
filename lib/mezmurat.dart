@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:weldwahidapp/NavBar.dart';
 import 'package:weldwahidapp/YeabalatMezmur.dart';
+import 'package:weldwahidapp/YebealatList.dart';
 import 'package:weldwahidapp/Yehitsanat.dart';
 import 'package:weldwahidapp/YemesganaList.dart';
 import 'package:weldwahidapp/Yeneseha.dart';
@@ -40,7 +41,7 @@ class Mezmurat extends StatelessWidget {
       YemesganaList(),
       Yeabalat(),
       Yeneseha(),
-      Yeabalat(),
+      YebealatList(),
       Yeserg(),
       Yehitsanat(),
      

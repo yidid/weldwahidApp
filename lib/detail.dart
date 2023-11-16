@@ -141,20 +141,21 @@ class DetailPage extends StatelessWidget {
                    
                   child: 
                    Padding(
-                     padding: const EdgeInsets.all(40.0),
+                     padding: const EdgeInsets.all(20.0),
                      child: Column(
                       children: [
+                      
                              
                      
                          Text('${data['Poem'].toString().replaceAll('\\n', '\n')}',
                         
               textAlign: TextAlign.center,
+
               softWrap: true,
               style: TextStyle(
                 fontWeight: FontWeight.w500,
-                color: Colors.black,
-
-                fontSize: 14,
+              
+                color:  Colors.black,
                 
               ),
                         ),
