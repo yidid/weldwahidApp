@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1049070694834",
+    "project_id": "weld-wahid-app",
+    "storage_bucket": "weld-wahid-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049070694834:android:d6f08ea93282821be674ab",
+        "android_client_info": {
+          "package_name": "com.example.weldwahidapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTYFCVbVpO9yfhlSW0w8LNta8LxQTGmEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
