@@ -41,7 +41,7 @@ class Address extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-               color:  HexColor("#1d4516"),
+               color:   HexColor("#1d4516"),
               ),
               height: height*0.13,
               width: width,

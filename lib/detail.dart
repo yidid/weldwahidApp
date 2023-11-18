@@ -149,7 +149,7 @@ class DetailPage extends StatelessWidget {
                      
                          Text('${data['Poem'].toString().replaceAll('\\n', '\n')}',
                         
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.left,
 
               softWrap: true,
               style: TextStyle(

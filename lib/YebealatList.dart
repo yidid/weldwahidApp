@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:weldwahidapp/NavBar.dart';
+import 'package:weldwahidapp/YeAwedeAmet.dart';
 import 'package:weldwahidapp/YeHosaina.dart';
 import 'package:weldwahidapp/YeLedet.dart';
 import 'package:weldwahidapp/YeTimeket.dart';
@@ -153,7 +154,7 @@ class _YebealatListState extends State<YebealatList> {
                  InkWell(
                   onTap: () {
                     Navigator.push(
-                      context, MaterialPageRoute(builder: ((context) => Yemesgana())));
+                      context, MaterialPageRoute(builder: ((context) => YeAwedeAmet())));
                     
                   },                       child: Padding(
                          padding: const EdgeInsets.all(8.0),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:weldwahidapp/YesenebtAgelogotList.dart';
 import 'package:weldwahidapp/addreses.dart';
 import 'package:weldwahidapp/agelglotoch.dart';
 import 'package:weldwahidapp/deber.dart';
@@ -41,7 +42,7 @@ class Dashboard extends StatelessWidget {
       WeldWahid(),
       Mezmurat(),
       Werboch(),
-      Agelglotoch(),
+      YeSenbetAgelgot(),
       Address(),
      ];
 

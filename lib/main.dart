@@ -77,10 +77,10 @@ class SplashScreen extends StatelessWidget {
          const Text('የኮተቤ መካነ ቅዱሳን ኢያቄም ወሐና  ',style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color: Colors.white ),),
          const Text('ወልድ ዋህድ ሰ/ት/ቤት ',style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color: Colors.white ),)
       ]),
-      backgroundColor: HexColor("#1d4518"),
+      backgroundColor: HexColor("#2a6422"),
       nextScreen:  Dashboard(),
       splashIconSize: 300,
-       duration: 4000,
+       duration: 3000,
        splashTransition: SplashTransition.slideTransition,
     
     );
