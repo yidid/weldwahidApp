@@ -7,14 +7,14 @@ import 'package:weldwahidapp/detail.dart';
 
 
 
-class YeLidet extends StatefulWidget {
-   YeLidet({super.key});
+class YeMeskelAchir extends StatefulWidget {
+   YeMeskelAchir({super.key});
 
   @override
-  State<YeLidet> createState() => _YeLidetState();
+  State<YeMeskelAchir> createState() => _YeMeskelAchirState();
 }
 
-class _YeLidetState extends State<YeLidet> {
+class _YeMeskelAchirState extends State<YeMeskelAchir> {
    var height,width;
    final controller = TextEditingController();
    
@@ -43,7 +43,7 @@ class _YeLidetState extends State<YeLidet> {
       drawer: NavBar(),
       body: 
       StreamBuilder<QuerySnapshot>(
-        stream: FirebaseFirestore.instance.collection('YeLedetMezmur').snapshots(),
+        stream: FirebaseFirestore.instance.collection('YeMeskelAchirMezmur').snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
           if (snapshot.hasError) {
             return Text('Error: ${snapshot.error}');
@@ -99,9 +99,10 @@ class _YeLidetState extends State<YeLidet> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children:const [
                           Text(
-                            "የልደት መዝሙራት  ",
+                            "የመስቀል መዝሙራት",
                             style: TextStyle(
-                              fontSize: 20,
+                                fontFamily: 'Courier',
+                              fontSize: 18,
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
                               
@@ -190,7 +191,7 @@ class _YeLidetState extends State<YeLidet> {
                             children: [
                               Padding(
                                 padding:  EdgeInsets.all(8.0),
-                                child: Text(data ['name'],
+                                child: Text(data['name'],
                                 style: 
                                 TextStyle(
                                   fontWeight: FontWeight.bold,

@@ -2,12 +2,14 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:weldwahidapp/NavBar.dart';
+import 'package:weldwahidapp/YeabalatList.dart';
 import 'package:weldwahidapp/YeabalatMezmur.dart';
 import 'package:weldwahidapp/YebealatList.dart';
 import 'package:weldwahidapp/Yehitsanat.dart';
 import 'package:weldwahidapp/YemesganaList.dart';
 import 'package:weldwahidapp/Yeneseha.dart';
 import 'package:weldwahidapp/Yeserg.dart';
+import 'package:weldwahidapp/YesergList.dart';
 import 'package:weldwahidapp/deber.dart';
 import 'package:weldwahidapp/weldwahid.dart';
 import 'package:weldwahidapp/yemesgana.dart';
@@ -39,10 +41,10 @@ class Mezmurat extends StatelessWidget {
      List pages=[
     
       YemesganaList(),
-      Yeabalat(),
+      YeabalatList(),
       Yeneseha(),
       YebealatList(),
-      Yeserg(),
+      YesergList(),
       Yehitsanat(),
      
     

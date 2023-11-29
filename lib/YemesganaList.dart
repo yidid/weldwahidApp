@@ -3,14 +3,23 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:weldwahidapp/NavBar.dart';
+import 'package:weldwahidapp/YeAbrhaWeAtsbha.dart';
+import 'package:weldwahidapp/YeAbuneGeberMenfesKidus.dart';
+import 'package:weldwahidapp/YeAbuneZeraBiruk.dart';
 import 'package:weldwahidapp/YeGetachenAchir.dart';
 import 'package:weldwahidapp/YeKidestSelassie.dart';
+import 'package:weldwahidapp/YeKidistArsema.dart';
 import 'package:weldwahidapp/YeKidusGebriel.dart';
+import 'package:weldwahidapp/YeKidusGiorgis.dart';
+import 'package:weldwahidapp/YeKidusMerkoryos.dart';
 import 'package:weldwahidapp/YeKidusMikael.dart';
 import 'package:weldwahidapp/YeKidusRufael.dart';
 import 'package:weldwahidapp/YeKidusan.dart';
+import 'package:weldwahidapp/YeKidusanMelaekt.dart';
 import 'package:weldwahidapp/YembetachenRejim.dart';
 import 'package:weldwahidapp/detail.dart';
+import 'package:weldwahidapp/yeAbuneTekleHymanot.dart';
+import 'package:weldwahidapp/yeKidusYohanes.dart';
 import 'package:weldwahidapp/yemesgana.dart';
 
 
@@ -464,6 +473,330 @@ class _YemesganaListState extends State<YemesganaList> {
                                Padding(
                                  padding:  EdgeInsets.all(8.0),
                                  child: Text("የቅዱሳን መዝሙራት",
+                                 style: 
+                                 TextStyle(
+                                   fontWeight: FontWeight.bold,
+                                   color:  HexColor("#1d4518"),
+                                 
+                                 ),),
+                               ),
+                              const Icon(  
+                             Icons.arrow_right,
+                             color: Colors.black,
+                             size:30,)
+                             ],
+                           )
+                           ),
+                                             ),
+                        ),
+                          InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: ((context) =>YeKidistArsema())));
+                    
+                  },
+                          child: Padding(
+                                               padding: const EdgeInsets.all(8.0),
+                                               child: Container
+                                               (
+                          width: 10,
+                          height: 40,
+                           color: Colors.white,
+                          
+                           child:  Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
+                               Padding(
+                                 padding:  EdgeInsets.all(8.0),
+                                 child: Text("የቅድስት አርሴማ መዝሙራት",
+                                 style: 
+                                 TextStyle(
+                                   fontWeight: FontWeight.bold,
+                                   color:  HexColor("#1d4518"),
+                                 
+                                 ),),
+                               ),
+                              const Icon(  
+                             Icons.arrow_right,
+                             color: Colors.black,
+                             size:30,)
+                             ],
+                           )
+                           ),
+                                             ),
+                        ),
+                          InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: ((context) =>YeKidusGiorgis())));
+                    
+                  },
+                          child: Padding(
+                                               padding: const EdgeInsets.all(8.0),
+                                               child: Container
+                                               (
+                          width: 10,
+                          height: 40,
+                           color: Colors.white,
+                          
+                           child:  Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
+                               Padding(
+                                 padding:  EdgeInsets.all(8.0),
+                                 child: Text("የቅዱስ ጊዮርጊስ መዝሙራት",
+                                 style: 
+                                 TextStyle(
+                                   fontWeight: FontWeight.bold,
+                                   color:  HexColor("#1d4518"),
+                                 
+                                 ),),
+                               ),
+                              const Icon(  
+                             Icons.arrow_right,
+                             color: Colors.black,
+                             size:30,)
+                             ],
+                           )
+                           ),
+                                             ),
+                        ),
+                          InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: ((context) =>YeAbuneZerabiruk())));
+                    
+                  },
+                          child: Padding(
+                                               padding: const EdgeInsets.all(8.0),
+                                               child: Container
+                                               (
+                          width: 10,
+                          height: 40,
+                           color: Colors.white,
+                          
+                           child:  Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
+                               Padding(
+                                 padding:  EdgeInsets.all(8.0),
+                                 child: Text("የአቡነ ዘርዐ ቡሩክ",
+                                 style: 
+                                 TextStyle(
+                                   fontWeight: FontWeight.bold,
+                                   color:  HexColor("#1d4518"),
+                                 
+                                 ),),
+                               ),
+                              const Icon(  
+                             Icons.arrow_right,
+                             color: Colors.black,
+                             size:30,)
+                             ],
+                           )
+                           ),
+                                             ),
+                        ),
+                       InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: ((context) =>AbuneTekleHaymanot())));
+                    
+                  },
+                          child: Padding(
+                                               padding: const EdgeInsets.all(8.0),
+                                               child: Container
+                                               (
+                          width: 10,
+                          height: 40,
+                           color: Colors.white,
+                          
+                           child:  Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
+                               Padding(
+                                 padding:  EdgeInsets.all(8.0),
+                                 child: Text("የአቡነ ተክለ ሃይማኖት",
+                                 style: 
+                                 TextStyle(
+                                   fontWeight: FontWeight.bold,
+                                   color:  HexColor("#1d4518"),
+                                 
+                                 ),),
+                               ),
+                              const Icon(  
+                             Icons.arrow_right,
+                             color: Colors.black,
+                             size:30,)
+                             ],
+                           )
+                           ),
+                                             ),
+                        ),
+                       InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: ((context) =>AbuneGebereMenfesKidus())));
+                    
+                  },
+                          child: Padding(
+                                               padding: const EdgeInsets.all(8.0),
+                                               child: Container
+                                               (
+                          width: 10,
+                          height: 40,
+                           color: Colors.white,
+                          
+                           child:  Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
+                               Padding(
+                                 padding:  EdgeInsets.all(8.0),
+                                 child: Text("የአቡነ ገብረመንፈስ ቅዱስ ",
+                                 style: 
+                                 TextStyle(
+                                   fontWeight: FontWeight.bold,
+                                   color:  HexColor("#1d4518"),
+                                 
+                                 ),),
+                               ),
+                              const Icon(  
+                             Icons.arrow_right,
+                             color: Colors.black,
+                             size:30,)
+                             ],
+                           )
+                           ),
+                                             ),
+                        ),
+                       InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: ((context) =>AbrehaWeAtsbha())));
+                    
+                  },
+                          child: Padding(
+                                               padding: const EdgeInsets.all(8.0),
+                                               child: Container
+                                               (
+                          width: 10,
+                          height: 40,
+                           color: Colors.white,
+                          
+                           child:  Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
+                               Padding(
+                                 padding:  EdgeInsets.all(8.0),
+                                 child: Text("የአብርሃ ወአጽብሃ",
+                                 style: 
+                                 TextStyle(
+                                   fontWeight: FontWeight.bold,
+                                   color:  HexColor("#1d4518"),
+                                 
+                                 ),),
+                               ),
+                              const Icon(  
+                             Icons.arrow_right,
+                             color: Colors.black,
+                             size:30,)
+                             ],
+                           )
+                           ),
+                                             ),
+                        ),
+                          InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: ((context) =>YeKidusanMelaekt())));
+                    
+                  },
+                          child: Padding(
+                                               padding: const EdgeInsets.all(8.0),
+                                               child: Container
+                                               (
+                          width: 10,
+                          height: 40,
+                           color: Colors.white,
+                          
+                           child:  Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
+                               Padding(
+                                 padding:  EdgeInsets.all(8.0),
+                                 child: Text("የቅዱሳን መላእክት",
+                                 style: 
+                                 TextStyle(
+                                   fontWeight: FontWeight.bold,
+                                   color:  HexColor("#1d4518"),
+                                 
+                                 ),),
+                               ),
+                              const Icon(  
+                             Icons.arrow_right,
+                             color: Colors.black,
+                             size:30,)
+                             ],
+                           )
+                           ),
+                                             ),
+                        ),
+                          InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: ((context) =>YeKidusMerkoryos())));
+                    
+                  },
+                          child: Padding(
+                                               padding: const EdgeInsets.all(8.0),
+                                               child: Container
+                                               (
+                          width: 10,
+                          height: 40,
+                           color: Colors.white,
+                          
+                           child:  Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
+                               Padding(
+                                 padding:  EdgeInsets.all(8.0),
+                                 child: Text("የቅዱስ መርቆርዮስ",
+                                 style: 
+                                 TextStyle(
+                                   fontWeight: FontWeight.bold,
+                                   color:  HexColor("#1d4518"),
+                                 
+                                 ),),
+                               ),
+                              const Icon(  
+                             Icons.arrow_right,
+                             color: Colors.black,
+                             size:30,)
+                             ],
+                           )
+                           ),
+                                             ),
+                        ),
+                          InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: ((context) =>YeKidusYohanes())));
+                    
+                  },
+                          child: Padding(
+                                               padding: const EdgeInsets.all(8.0),
+                                               child: Container
+                                               (
+                          width: 10,
+                          height: 40,
+                           color: Colors.white,
+                          
+                           child:  Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
+                               Padding(
+                                 padding:  EdgeInsets.all(8.0),
+                                 child: Text("የቅዱስ ዮሃንስ ",
                                  style: 
                                  TextStyle(
                                    fontWeight: FontWeight.bold,

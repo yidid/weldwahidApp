@@ -4,8 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:weldwahidapp/NavBar.dart';
 import 'package:weldwahidapp/YeAwedeAmet.dart';
+import 'package:weldwahidapp/YeDebereTabor.dart';
+import 'package:weldwahidapp/YeGinbotLideta.dart';
 import 'package:weldwahidapp/YeHosaina.dart';
 import 'package:weldwahidapp/YeLedet.dart';
+import 'package:weldwahidapp/YeMeskelList.dart';
 import 'package:weldwahidapp/YeTimeket.dart';
 import 'package:weldwahidapp/YeTinsaeMezmurat.dart';
 import 'package:weldwahidapp/YembetachenRejim.dart';
@@ -188,35 +191,42 @@ class _YebealatListState extends State<YebealatList> {
                      ),
                 
                 
-                        Padding(
-                       padding: const EdgeInsets.all(8.0),
-                       child: Container
-                       (
-                        width: 10,
-                        height: 40,
-                         color: Colors.white,
-                        
-                         child:  Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                           children: [
-                             Padding(
-                               padding:  EdgeInsets.all(8.0),
-                               child: Text("የመስቀል መዝሙራት",
-                               style: 
-                               TextStyle(
-                                 fontWeight: FontWeight.bold,
-                                 color:  HexColor("#1d4518"),
-                               
-                               ),),
-                             ),
-                            const Icon(  
-                           Icons.arrow_right,
-                           color: Colors.black,
-                           size:30,)
-                           ],
-                         )
-                         ),
-                     ),
+                         InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: ((context) => YeMeskelList())));
+                    
+                  }, 
+                          child: Padding(
+                                               padding: const EdgeInsets.all(8.0),
+                                               child: Container
+                                               (
+                          width: 10,
+                          height: 40,
+                           color: Colors.white,
+                          
+                           child:  Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
+                               Padding(
+                                 padding:  EdgeInsets.all(8.0),
+                                 child: Text("የመስቀል መዝሙራት",
+                                 style: 
+                                 TextStyle(
+                                   fontWeight: FontWeight.bold,
+                                   color:  HexColor("#1d4518"),
+                                 
+                                 ),),
+                               ),
+                              const Icon(  
+                             Icons.arrow_right,
+                             color: Colors.black,
+                             size:30,)
+                             ],
+                           )
+                           ),
+                                             ),
+                        ),
                        InkWell(
                   onTap: () {
                     Navigator.push(
@@ -365,64 +375,78 @@ class _YebealatListState extends State<YebealatList> {
                            ),
                                              ),
                         ),
-                        Padding(
-                       padding: const EdgeInsets.all(8.0),
-                       child: Container
-                       (
-                        width: 10,
-                        height: 40,
-                         color: Colors.white,
-                        
-                         child:  Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                           children: [
-                             Padding(
-                               padding:  EdgeInsets.all(8.0),
-                               child: Text("የልደታ ወረቦች",
-                               style: 
-                               TextStyle(
-                                 fontWeight: FontWeight.bold,
-                                 color:  HexColor("#1d4518"),
-                               
-                               ),),
-                             ),
-                            const Icon(  
-                           Icons.arrow_right,
-                           color: Colors.black,
-                           size:30,)
-                           ],
-                         )
-                         ),
-                     ),
-                        Padding(
-                       padding: const EdgeInsets.all(8.0),
-                       child: Container
-                       (
-                        width: 10,
-                        height: 40,
-                         color: Colors.white,
-                        
-                         child:  Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                           children: [
-                             Padding(
-                               padding:  EdgeInsets.all(8.0),
-                               child: Text("የኢያቄም ወረቦች",
-                               style: 
-                               TextStyle(
-                                 fontWeight: FontWeight.bold,
-                                 color:  HexColor("#1d4518"),
-                               
-                               ),),
-                             ),
-                            const Icon(  
-                           Icons.arrow_right,
-                           color: Colors.black,
-                           size:30,)
-                           ],
-                         )
-                         ),
-                     ),
+                            InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: ((context) => YeDebereTabor())));
+                    
+                  },
+                          child: Padding(
+                                               padding: const EdgeInsets.all(8.0),
+                                               child: Container
+                                               (
+                          width: 10,
+                          height: 40,
+                           color: Colors.white,
+                          
+                           child:  Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
+                               Padding(
+                                 padding:  EdgeInsets.all(8.0),
+                                 child: Text("የደብረታቦር መዝሙራት",
+                                 style: 
+                                 TextStyle(
+                                   fontWeight: FontWeight.bold,
+                                   color:  HexColor("#1d4518"),
+                                 
+                                 ),),
+                               ),
+                              const Icon(  
+                             Icons.arrow_right,
+                             color: Colors.black,
+                             size:30,)
+                             ],
+                           )
+                           ),
+                                             ),
+                        ),
+                       InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context, MaterialPageRoute(builder: ((context) => YeGinbotLideta())));
+                    
+                  },
+                          child: Padding(
+                                               padding: const EdgeInsets.all(8.0),
+                                               child: Container
+                                               (
+                          width: 10,
+                          height: 40,
+                           color: Colors.white,
+                          
+                           child:  Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                             children: [
+                               Padding(
+                                 padding:  EdgeInsets.all(8.0),
+                                 child: Text("የግንቦት ልደታ",
+                                 style: 
+                                 TextStyle(
+                                   fontWeight: FontWeight.bold,
+                                   color:  HexColor("#1d4518"),
+                                 
+                                 ),),
+                               ),
+                              const Icon(  
+                             Icons.arrow_right,
+                             color: Colors.black,
+                             size:30,)
+                             ],
+                           )
+                           ),
+                                             ),
+                        ),
                         Padding(
                        padding: const EdgeInsets.all(8.0),
                        child: Container

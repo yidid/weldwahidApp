@@ -7,14 +7,14 @@ import 'package:weldwahidapp/detail.dart';
 
 
 
-class YeLidet extends StatefulWidget {
-   YeLidet({super.key});
+class werebHamleGebreal extends StatefulWidget {
+   werebHamleGebreal({super.key});
 
   @override
-  State<YeLidet> createState() => _YeLidetState();
+  State<werebHamleGebreal> createState() => _werebHamleGebrealState();
 }
 
-class _YeLidetState extends State<YeLidet> {
+class _werebHamleGebrealState extends State<werebHamleGebreal> {
    var height,width;
    final controller = TextEditingController();
    
@@ -43,7 +43,7 @@ class _YeLidetState extends State<YeLidet> {
       drawer: NavBar(),
       body: 
       StreamBuilder<QuerySnapshot>(
-        stream: FirebaseFirestore.instance.collection('YeLedetMezmur').snapshots(),
+        stream: FirebaseFirestore.instance.collection("werebHamleGebreal").snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
           if (snapshot.hasError) {
             return Text('Error: ${snapshot.error}');
@@ -55,12 +55,6 @@ class _YeLidetState extends State<YeLidet> {
 
           final documents = snapshot.data!.docs;
 
-         
-            
-            
-
-    
-    
 
         return Container(
       
@@ -99,7 +93,7 @@ class _YeLidetState extends State<YeLidet> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children:const [
                           Text(
-                            "የልደት መዝሙራት  ",
+                            "የኅምሌ ገብርኤል ",
                             style: TextStyle(
                               fontSize: 20,
                               color: Colors.white,
@@ -190,7 +184,7 @@ class _YeLidetState extends State<YeLidet> {
                             children: [
                               Padding(
                                 padding:  EdgeInsets.all(8.0),
-                                child: Text(data ['name'],
+                                child: Text(data['name'],
                                 style: 
                                 TextStyle(
                                   fontWeight: FontWeight.bold,

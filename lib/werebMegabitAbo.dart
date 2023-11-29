@@ -7,14 +7,14 @@ import 'package:weldwahidapp/detail.dart';
 
 
 
-class YeLidet extends StatefulWidget {
-   YeLidet({super.key});
+class WerebMegabitAbo extends StatefulWidget {
+   WerebMegabitAbo({super.key});
 
   @override
-  State<YeLidet> createState() => _YeLidetState();
+  State<WerebMegabitAbo> createState() => _WerebMegabitAboState();
 }
 
-class _YeLidetState extends State<YeLidet> {
+class _WerebMegabitAboState extends State<WerebMegabitAbo> {
    var height,width;
    final controller = TextEditingController();
    
@@ -43,7 +43,7 @@ class _YeLidetState extends State<YeLidet> {
       drawer: NavBar(),
       body: 
       StreamBuilder<QuerySnapshot>(
-        stream: FirebaseFirestore.instance.collection('YeLedetMezmur').snapshots(),
+        stream: FirebaseFirestore.instance.collection("werebMegabitGebereMenesfesKidus").snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
           if (snapshot.hasError) {
             return Text('Error: ${snapshot.error}');
@@ -99,7 +99,7 @@ class _YeLidetState extends State<YeLidet> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children:const [
                           Text(
-                            "የልደት መዝሙራት  ",
+                            "የግንቦት ልደታ መዝሙራት",
                             style: TextStyle(
                               fontSize: 20,
                               color: Colors.white,
@@ -190,7 +190,7 @@ class _YeLidetState extends State<YeLidet> {
                             children: [
                               Padding(
                                 padding:  EdgeInsets.all(8.0),
-                                child: Text(data ['name'],
+                                child: Text(data['name'],
                                 style: 
                                 TextStyle(
                                   fontWeight: FontWeight.bold,

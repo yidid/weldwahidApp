@@ -7,14 +7,14 @@ import 'package:weldwahidapp/detail.dart';
 
 
 
-class YeLidet extends StatefulWidget {
-   YeLidet({super.key});
+class AbuneTekleHaymanot extends StatefulWidget {
+   AbuneTekleHaymanot({super.key});
 
   @override
-  State<YeLidet> createState() => _YeLidetState();
+  State<AbuneTekleHaymanot> createState() => _AbuneTekleHaymanotState();
 }
 
-class _YeLidetState extends State<YeLidet> {
+class _AbuneTekleHaymanotState extends State<AbuneTekleHaymanot> {
    var height,width;
    final controller = TextEditingController();
    
@@ -43,7 +43,7 @@ class _YeLidetState extends State<YeLidet> {
       drawer: NavBar(),
       body: 
       StreamBuilder<QuerySnapshot>(
-        stream: FirebaseFirestore.instance.collection('YeLedetMezmur').snapshots(),
+        stream: FirebaseFirestore.instance.collection("YeAbuneTeklehaymanot").snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
           if (snapshot.hasError) {
             return Text('Error: ${snapshot.error}');
@@ -99,7 +99,7 @@ class _YeLidetState extends State<YeLidet> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children:const [
                           Text(
-                            "የልደት መዝሙራት  ",
+                            "የአቡነ ተክለ ሃይማኖት መዝሙራት",
                             style: TextStyle(
                               fontSize: 20,
                               color: Colors.white,
@@ -190,7 +190,7 @@ class _YeLidetState extends State<YeLidet> {
                             children: [
                               Padding(
                                 padding:  EdgeInsets.all(8.0),
-                                child: Text(data ['name'],
+                                child: Text(data['name'],
                                 style: 
                                 TextStyle(
                                   fontWeight: FontWeight.bold,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 
 import 'NavBar.dart';
@@ -126,11 +127,91 @@ class Address extends StatelessWidget {
                 
                 ),
           ),
-   
-              ),
-             
+    child: SingleChildScrollView( 
+              
             
-            )
+            scrollDirection: Axis.vertical, 
+                child:  Padding(
+                  padding:  const EdgeInsets.only(
+                    top:20, left:25, right:25),
+                   
+                  child: 
+                   Padding(
+                     padding: const EdgeInsets.all(8.0),
+                     child: Column(
+                      children: [
+                         Image.asset('assets/logo.png',width: 200,height: 120,),
+                        const Text(
+                        
+                         
+                          'በተለያዩ አገልግሎቶች እኛን ማግኘት ከፈለጉ በነዚህ ሊንኮች የማህድራዊ ድረ-ገጾቻችንን ይመልከቱ።'
+              
+              
+              
+              
+
+              
+              
+               ,
+              textAlign: TextAlign.justify,
+              style: TextStyle(
+                fontWeight: FontWeight.w500,
+                color: Colors.black,
+
+                fontSize: 15,
+                
+              ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(28.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                           
+                            children: [
+                              InkWell(
+                      onTap: () => launch('https://docs.flutter.io/flutter/services/UrlLauncher-class.html'),
+                                child: Icon( Icons.telegram_outlined,
+                                color: Colors.blue,
+                                size: 35, ),
+                              ),
+                              InkWell(
+                      onTap: () => launch('https://docs.flutter.io/flutter/services/UrlLauncher-class.html'),
+                                 child: Icon( Icons.tiktok_outlined,
+                                                         color:Color.fromARGB(255, 5, 70, 100),
+                                                          size: 35,),
+                               ),
+                         InkWell(
+                      onTap: () => launch('https://docs.flutter.io/flutter/services/UrlLauncher-class.html'),
+                            child: Icon( Icons.facebook_outlined,
+                            color: Colors.blue, 
+                             size: 35,),
+                          ),
+                           InkWell(
+                      onTap: () => launch('https://docs.flutter.io/flutter/services/UrlLauncher-class.html'),
+                            child: Icon( Icons.abc_outlined,
+                            color: Colors.blue, 
+                             size: 35,),
+                          ),
+                            ],
+                          ),
+                        ),
+                       
+                       
+                        
+
+                      ],
+                  ),
+                   )
+              
+              
+                  ),
+                )
+              ),
+              
+            
+            ),
+
+            
     ]),
       )
       
